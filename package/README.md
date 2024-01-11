@@ -18,3 +18,7 @@ Final sanitization
 1.0.3
 ======
 +Electric131-OuijaBoard
+
+1.0.4
+======
++FlipMods-TooManyEmotes
