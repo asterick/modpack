@@ -14,3 +14,7 @@ Remove (most) prerequisites from list
 1.0.2
 =====
 Final sanitization
+
+1.0.3
+======
++Electric131-OuijaBoard
