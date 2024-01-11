@@ -83,7 +83,7 @@ function* diff(a, b) {
 async function main() {
     const depList = await getDepList(process.argv[2]);
 
-    const totalPath = `${process.argv[1]}/WhalesCompany/manifest.json`;
+    const totalPath = `${process.argv[1]}/package/manifest.json`;
     const manifest = JSON.parse(await fs.readFile(totalPath, 'utf-8'));
 
     /* Determine changes in dep list */
@@ -106,7 +106,7 @@ async function main() {
     await fs.writeFile(totalPath, JSON.stringify(manifest, null, 2), 'utf-8')
 
     /* Add diff to README.md */
-    await fs.appendFile(`${process.argv[1]}/WhalesCompany/README.md`, `\n${version_number}\n======\n${changes.join("\n")}\n`, 'utf-8')
+    await fs.appendFile(`${process.argv[1]}/package/README.md`, `\n${version_number}\n======\n${changes.join("\n")}\n`, 'utf-8')
 }
 
 main();
