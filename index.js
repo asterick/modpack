@@ -98,11 +98,16 @@ async function main() {
 
     /* Update manifest, bump version number */
     let [_, major, minor, patch] = manifest.version_number.match(/^([0-9]+)\.([0-9]+)\.([0-9]+)$/);
+    const version_number = `${major}.${minor}.${++patch}`;
 
     manifest.dependencies = depList;
-    manifest.version_number = `${major}.${minor}.${++patch}`;
+    manifest.version_number = version_number;
 
-    fs.writeFile(totalPath, JSON.stringify(manifest, null, 2), 'utf-8')
+    await fs.writeFile(totalPath, JSON.stringify(manifest, null, 2), 'utf-8')
+
+    /* Add diff to README.md */
+    await fs.appendFile(`${process.argv[1]}/WhalesCompany/README.md`, `\n${version_number}\n======\n${depList.join("\n")}\n`, 'utf-8')
 }
 
 main();
+
