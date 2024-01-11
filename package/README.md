@@ -22,3 +22,14 @@ Final sanitization
 1.0.4
 ======
 +FlipMods-TooManyEmotes
+
+1.0.5
+======
++Zingar-SecretLabs
++GarrettFTW-Abandoned_Manor
++togglemybits-Strange_Objects
++sfDesat-Orion
++FireNoobsta-Ducks_Moons
++KayNetsua-E_Gypt_Moon
++sfDesat-Aquatis
++Pinta-PintoBoy
