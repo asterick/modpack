@@ -8,6 +8,8 @@ const yaml = require('yaml');
 const fs = require('fs').promises;
 const path = require('path');
 
+const PACKAGE_NAME = /^[a-zA-Z0-9_]+-[a-zA-Z0-9_]+/;
+
 async function getURL(urlString) {
     urlString.port = 443;
     
@@ -59,7 +61,7 @@ async function getDepList(code) {
             return false;
         }
 
-        const deps = mod.dependencies.map((dep) => dep.match(/^[a-zA-Z0-9_]+-[a-zA-Z0-9_]+/)[0]);
+        const deps = mod.dependencies.map((dep) => dep.match(PACKAGE_NAME)[0]);
         dependancies.push(... deps);
 
         return true;
@@ -69,25 +71,38 @@ async function getDepList(code) {
 }
 
 function* diff(a, b) {
-    if (a.indexOf(b) < 0) return b;
+    for (const c of b) {
+        if (a.indexOf(c) < 0) yield `-${c}`;
+    }
+
+    for (const c of a) {
+        if (b.indexOf(c) < 0) yield `+${c}`;
+    }
 }
 
 async function main() {
     const depList = await getDepList(process.argv[2]);
-    console.log(depList);
 
     const totalPath = `${process.argv[1]}/WhalesCompany/manifest.json`;
     const manifest = JSON.parse(await fs.readFile(totalPath, 'utf-8'));
-    const changes = [];
 
-    for (let removed of diff(depList, manifest.dependencies)) {
-        changes.push(`-${removed}`);
-    }
-    for (let added of diff(manifest.dependencies, depList)) {
-        changes.push(`+${added}`);
+    /* Determine changes in dep list */
+    const newNames = manifest.dependencies.map((b) => b.match(PACKAGE_NAME)[0]);
+    const oldNames = depList.map((b) => b.match(PACKAGE_NAME)[0]);
+    const changes = [... diff(oldNames, newNames)];
+
+    if (changes.length == 0) {
+        console.log("No changes");
+        return ;
     }
 
-    console.log(changes);
+    /* Update manifest, bump version number */
+    let [_, major, minor, patch] = manifest.version_number.match(/^([0-9]+)\.([0-9]+)\.([0-9]+)$/);
+
+    manifest.dependencies = depList;
+    manifest.version_number = `${major}.${minor}.${++patch}`;
+
+    fs.writeFile(totalPath, JSON.stringify(manifest, null, 2), 'utf-8')
 }
 
 main();
