@@ -44,3 +44,7 @@ Final sanitization
 -Nases-Quick_Drop
 -boxofbiscuits97-ItemDropCycler
 -togglemybits-Strange_Objects
+
+1.0.8
+======
+-ic23-KeyRing
