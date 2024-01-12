@@ -33,3 +33,8 @@ Final sanitization
 +KayNetsua-E_Gypt_Moon
 +sfDesat-Aquatis
 +Pinta-PintoBoy
+
+1.0.6
+======
+-Electric131-OuijaBoard
+-KayNetsua-E_Gypt_Moon
