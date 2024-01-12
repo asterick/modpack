@@ -1,6 +1,6 @@
 {
   "name": "WhalesCompany",
-  "version_number": "1.0.6",
+  "version_number": "1.0.7",
   "website_url": "https://www.twitch.tv/justuswhales",
   "description": "Community Modpack for community play",
   "dependencies": [
@@ -24,8 +24,6 @@
     "FlipMods-ReservedWeaponSlot-1.0.3",
     "amnsoft-EmployeeAssignments-1.1.0",
     "ic23-KeyRing-1.1.0",
-    "Nases-Quick_Drop-1.0.1",
-    "boxofbiscuits97-ItemDropCycler-1.1.0",
     "NotAtomicBomb-Terminal_Clock-1.0.5",
     "FutureSavior-Hold_Scan_Button-1.1.1",
     "x753-Mimics-2.3.2",
@@ -34,7 +32,6 @@
     "FlipMods-TooManyEmotes-1.7.8",
     "Zingar-SecretLabs-3.2.4",
     "GarrettFTW-Abandoned_Manor-1.3.0",
-    "togglemybits-Strange_Objects-1.2.3",
     "sfDesat-Orion-1.2.0",
     "FireNoobsta-Ducks_Moons-1.1.3",
     "sfDesat-Aquatis-0.4.2",

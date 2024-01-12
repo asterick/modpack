@@ -38,3 +38,9 @@ Final sanitization
 ======
 -Electric131-OuijaBoard
 -KayNetsua-E_Gypt_Moon
+
+1.0.7
+======
+-Nases-Quick_Drop
+-boxofbiscuits97-ItemDropCycler
+-togglemybits-Strange_Objects
