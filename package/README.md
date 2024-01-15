@@ -48,3 +48,9 @@ Final sanitization
 1.0.8
 ======
 * -ic23-KeyRing
+
+1.0.9
+======
+* +Nases-Quick_Drop
++boxofbiscuits97-ItemDropCycler
+* 
