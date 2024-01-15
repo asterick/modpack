@@ -52,5 +52,4 @@ Final sanitization
 1.0.9
 ======
 * +Nases-Quick_Drop
-+boxofbiscuits97-ItemDropCycler
-* 
+* +boxofbiscuits97-ItemDropCycler

@@ -106,7 +106,7 @@ async function main() {
     await fs.writeFile(totalPath, JSON.stringify(manifest, null, 2), 'utf-8')
 
     /* Add diff to README.md */
-    await fs.appendFile(`${process.argv[1]}/package/README.md`, `\n${version_number}\n======\n* ${changes.join("\n")}\n* `, 'utf-8')
+    await fs.appendFile(`${process.argv[1]}/package/README.md`, `\n${version_number}\n======\n* ${changes.join("\n* ")}\n`, 'utf-8')
 }
 
 main();
