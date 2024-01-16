@@ -1,6 +1,6 @@
 {
   "name": "WhalesCompany",
-  "version_number": "1.0.9",
+  "version_number": "1.1.1",
   "website_url": "https://www.twitch.tv/justuswhales",
   "description": "Community Modpack for community play",
   "dependencies": [
@@ -8,9 +8,9 @@
     "tinyhoot-ShipLoot-1.0.0",
     "anormaltwig-LateCompany-1.0.10",
     "Sligili-More_Emotes-1.3.3",
-    "Pooble-LCBetterSaves-1.7.0",
+    "Pooble-LCBetterSaves-1.7.1",
     "fivetoofive-DetailedScan-1.2.2",
-    "FlipMods-HotbarPlus-1.5.4",
+    "FlipMods-HotbarPlus-1.5.6",
     "notnotnotswipez-MoreCompany-1.7.4",
     "Monkeytype-HideChat-1.0.0",
     "CTMods-KarmaForBeingAnnoying-1.1.0",
@@ -26,16 +26,15 @@
     "NotAtomicBomb-Terminal_Clock-1.0.5",
     "FutureSavior-Hold_Scan_Button-1.1.1",
     "x753-Mimics-2.3.2",
-    "RugbugRedfern-Skinwalkers-3.0.1",
+    "RugbugRedfern-Skinwalkers-4.0.1",
     "Backrooms-Backrooms-0.1.3",
-    "FlipMods-TooManyEmotes-1.7.10",
+    "FlipMods-TooManyEmotes-1.7.14",
     "Zingar-SecretLabs-3.2.4",
     "GarrettFTW-Abandoned_Manor-1.3.0",
-    "sfDesat-Orion-1.2.0",
+    "sfDesat-Orion-1.2.3",
     "FireNoobsta-Ducks_Moons-1.1.3",
     "sfDesat-Aquatis-0.4.2",
     "Pinta-PintoBoy-1.0.3",
-    "Nases-Quick_Drop-1.0.1",
-    "boxofbiscuits97-ItemDropCycler-1.1.0"
+    "readthisifbad-SnatchinBracken-1.1.3"
   ]
 }

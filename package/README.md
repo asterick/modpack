@@ -53,3 +53,12 @@ Final sanitization
 ======
 * +Nases-Quick_Drop
 * +boxofbiscuits97-ItemDropCycler
+
+1.1.0
+=====
+* +readthisifbad-SnatchinBracken
+
+1.1.1
+======
+* -Nases-Quick_Drop
+* -boxofbiscuits97-ItemDropCycler
